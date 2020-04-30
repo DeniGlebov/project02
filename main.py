@@ -41,7 +41,6 @@ def customers():
         query = f" SELECT * FROM customers WHERE {filter_and(param)}"
 
     query += ';'
-    print(query)
     return str(run_query(query))
 
 
